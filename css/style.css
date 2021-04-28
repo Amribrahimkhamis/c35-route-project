@@ -1,0 +1,179 @@
+/* Global */
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.font-size-13 {
+  font-size: 13px;
+}
+.font-size-14 {
+  font-size: 14px;
+}
+.font-size-18 {
+  font-size: 18px;
+}
+.font-size-25 {
+  font-size: 25px;
+}
+.font-size-32 {
+  font-size: 32px;
+}
+.font-size-38 {
+  font-size: 38px;
+}
+.font-size-40 {
+  font-size: 40px;
+}
+.font-size-70 {
+  font-size: 70px;
+}
+.text-red {
+  color: #f25454;
+}
+.text-gray {
+  color: #444444;
+}
+.text-lightGray {
+  color: #666666;
+}
+.text-lightGray-1 {
+  color: #b0b0b0;
+}
+
+.text-shadow-lightGray {
+  color: lightgray;
+  opacity: 0.5;
+}
+.bg-lightGray {
+  background-color: #fafafa;
+}
+
+.black-line {
+  width: 50px;
+  height: 1px;
+  background-color: black;
+  transition: all 0.2s ease-in;
+}
+.section-title:hover .black-line {
+  width: 100px;
+}
+a:hover {
+  text-decoration: none;
+  color: #f25454;
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  border-bottom: solid 0.5px rgb(141, 138, 138);
+  position: absolute;
+  top: 0;
+  z-index: 100;
+}
+.navbar .navbar-nav > li.active > a {
+  color: #f25454 !important;
+}
+
+.navbar .navbar-nav > li a:hover {
+  color: #f25454 !important;
+}
+
+/* Home */
+header {
+  position: relative;
+}
+.home-1 {
+  height: 100vh;
+  background: url(../images/slideshow-1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.home-2 {
+  height: 100vh;
+  background: url(../images/slideshow-2.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.home-3 {
+  height: 100vh;
+  background: url(../images/slideshow-3.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.slider-control {
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 150;
+}
+
+.carousel-control-prev {
+  border: solid 2px white;
+  width: 75px;
+  height: 50px;
+}
+
+.carousel-control-prev-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-control-next {
+  border: solid 2px white;
+  width: 75px;
+  height: 50px;
+  border-top: transparent;
+}
+
+.carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.setting-bar {
+  position: fixed;
+  top: 25%;
+  left: 0px;
+  z-index: 150;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #1f2528;
+}
+
+.setting-bar:hover {
+  background-color: #434343;
+}
+.mouse-curser-container {
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  z-index: 500;
+}
+.mouse-curser {
+  width: 40px;
+  height: 25px;
+  border: solid 1px white;
+  transform: rotate(90deg);
+  position: relative;
+}
+.white-point {
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  position: absolute;
+  top: 33.33%;
+  left: 5px;
+  animation: white-point-movement 1s infinite ease-in;
+}
+
+@keyframes white-point-movement {
+  0% {
+    left: 5px;
+  }
+  100% {
+    left: 20px;
+    opacity: 0;
+  }
+}
