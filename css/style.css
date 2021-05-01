@@ -78,6 +78,15 @@ a:hover {
   color: #f25454 !important;
 }
 
+.show{
+  background-color: white;
+}
+
+.show .nav-link{
+  color:black !important;
+}
+
+
 /* Home */
 header {
   position: relative;
